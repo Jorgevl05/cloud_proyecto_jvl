@@ -3,21 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Resume Challenge - Jorge</title>
+    <title>Cloud Resume Challenge - CV</title>
     <style>
-        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
-        .counter-box { font-size: 24px; font-weight: bold; color: #007bff; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        ul {
+            list-style-type: square;
+        }
+        .counter-box {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Mi Currículum en la Nube</h1>
-    <p>Bienvenido a mi CV hosteado en AWS.</p>
+<div class="container">
 
-    <!-- AQUÍ SE MUESTRA EL CONTADOR -->
+    <h1>Marc Soler Vidal</h1>
+    <p><strong>Estudiante de Administración de Sistemas Informáticos en Red (ASIX)</strong></p>
+    <p>📍 España | 📧 marc.soler@email.com</p>
+
+    <hr>
+
+    <h2>Perfil Profesional</h2>
+    <p>
+        Estudiante de ASIX con sólidos conocimientos en sistemas, redes y entornos cloud.
+        Motivado, responsable y con experiencia en prácticas en un entorno profesional
+        de alto nivel como Microsoft.
+    </p>
+
+    <hr>
+
+    <h2>Formación Académica</h2>
+    <ul>
+        <li>
+            <strong>Grado Superior en Administración de Sistemas Informáticos en Red (ASIX)</strong><br>
+            2024 – Mayo 2026
+        </li>
+        <li>
+            <strong>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</strong><br>
+            2021 – 2023
+        </li>
+        <li>
+            <strong>Año sabático / formación personal</strong><br>
+            2023 – 2024
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Experiencia Profesional</h2>
+    <ul>
+        <li>
+            <strong>Prácticas en Microsoft</strong><br>
+            Departamento de IT / Sistemas<br>
+            Soporte técnico, administración básica de sistemas y trabajo en entornos cloud.
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2>Idiomas</h2>
+    <ul>
+        <li>Castellano: Nativo</li>
+        <li>Catalán: Nativo</li>
+        <li>Inglés: Nivel medio (B2)</li>
+    </ul>
+
+    <hr>
+
+    <h2>Visitas a este CV</h2>
     <p>Eres el visitante número: <span id="counter" class="counter-box">...</span></p>
 
-    <!-- Script del contador -->
-    <script src="counter.js"></script>
+</div>
+
+<!-- Script del contador -->
+<script src="counter.js"></script>
+
 </body>
 </html>
