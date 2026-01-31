@@ -3,97 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Resume Challenge - CV</title>
+    <title>MotoGP Fan Club</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f5f5f5;
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://resources.motogp.pulselive.com/photo-resources/2023/11/26/2d9b8971-8b0e-4f18-97c7-013149d6360c/DSC08835.JPG?width=1440&height=810');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
         }
-        h1, h2 {
-            color: #007bff;
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
         }
-        hr {
-            margin: 20px 0;
-        }
-        ul {
-            list-style-type: square;
-        }
-        .counter-box {
-            font-size: 20px;
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 50px;
             font-weight: bold;
-            color: #007bff;
+            transition: all 0.3s;
+            border: 2px solid var(--primary-color);
+        }
+        .cta-button:hover {
+            background-color: transparent;
+            color: var(--primary-color);
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">MotoGP FAN CLUB</div>
+            <nav>
+                <ul>
+                    <!-- En index.html solo mostramos opciones públicas -->
+                    <li><a href="login.php">Iniciar Sesión</a></li>
+                    <li><a href="register.php">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<div class="container">
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Pasión por la Velocidad</h1>
+            <p>Únete a la comunidad oficial de fans de MotoGP. Gestiona tus equipos y pilotos favoritos.</p>
+            <a href="register.php" class="cta-button">Únete Ahora</a>
+        </div>
+    </div>
 
-    <h1>Marc Soler Vidal</h1>
-    <p><strong>Estudiante de Administración de Sistemas Informáticos en Red (ASIX)</strong></p>
-    <p>📍 España | 📧 marc.soler@email.com</p>
-
-    <hr>
-
-    <h2>Perfil Profesional</h2>
-    <p>
-        Estudiante de ASIX con sólidos conocimientos en sistemas, redes y entornos cloud.
-        Motivado, responsable y con experiencia en prácticas en un entorno profesional
-        de alto nivel como Microsoft.
-    </p>
-
-    <hr>
-
-    <h2>Formación Académica</h2>
-    <ul>
-        <li>
-            <strong>Grado Superior en Administración de Sistemas Informáticos en Red (ASIX)</strong><br>
-            2024 – Mayo 2026
-        </li>
-        <li>
-            <strong>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</strong><br>
-            2021 – 2023
-        </li>
-    </ul>
-
-    <hr>
-
-    <h2>Experiencia Profesional</h2>
-    <ul>
-        <li>
-            <strong>Prácticas en Microsoft</strong><br>
-            Departamento de IT / Sistemas<br>
-            Soporte técnico, administración básica de sistemas y trabajo en entornos cloud.
-        </li>
-    </ul>
-
-    <hr>
-
-    <h2>Idiomas</h2>
-    <ul>
-        <li>Castellano: Nativo</li>
-        <li>Catalán: Nativo</li>
-        <li>Inglés: Nivel medio (B2)</li>
-    </ul>
-
-    <hr>
-
-    <h2>Visitas a este CV</h2>
-    <p>Eres el visitante número: <span id="counter" class="counter-box">...</span></p>
-
-</div>
-
-<!-- Script del contador -->
-<script src="counter.js"></script>
-
+    <footer style="background: #111; padding: 20px; text-align: center; color: #666;">
+        <p>&copy; 2024 MotoGP Fan Club Project. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
